@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+.logo {
+  height: 30px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px ;
+  cursor:pointer ;
+  
+}
+.navbar {
+  background: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.icons span {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+
+.container {
+  padding: 15px;
+}
+
+.product-box {
+  background: white;
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;  
+}
+
+
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.shop-btn {
+  position: absolute; 
+  bottom: -20px;
+  box-sizing: border-box;
+  left: 50%;    
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  border: none;
+  width: 230px;
+  padding: 15px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20;
+}
+
+.promo-box {
+  background: #C40808;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.promo-box h1{
+  font-size: 30px;
+  display: block;
+}
+.promo-box a {
+  color: white;
+  display: block; 
+  margin-top: 20px;
+  text-decoration: none;
+  
+}
+.promo-box a:hover {
+  text-decoration: underline;
+}
+.hover-card .shop-btn {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.hover-card:hover .shop-btn {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.product-thumb {
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  color: #000;
+  grid-area: thumb;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom:25px ;
+}
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  object-fit: cover;
+}
+.prdt-cover {
+  font-size: 23px;
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.product-thumb:hover .prdt-cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+.explore {
+  background: #401919;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  height: 60px;
+  border-radius: 10px;
+}
+.explore span{
+  font-weight: bold;
+  font-size: 24px;
+}
+.arrow-btn {
+  background: #fff;
+  color: #C40808;
+  border: none;
+  border-radius: 15%;
+  width: 40px;
+  height: 55px;
+  font-weight: bold;
+   font-size: 30px;  
+  cursor: pointer;
+
+}
+
+.footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.logo2 {
+  height: 30px;
+}
+
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.footer .social {
+  margin: 10px 0;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.wrapper .icon {
+  position: relative;
+  background: #111;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
