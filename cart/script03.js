@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- PHẦN GIỎ HÀNG ---
   const quantityEl = document.getElementById("quantity");
   const priceDisplay = document.getElementById("price-display");
-  const itemText = document.getElementById("item-text");
+const itemText = document.getElementById("item-count");
   const subtotalEl = document.getElementById("subtotal");
   const totalEl = document.getElementById("total");
 
